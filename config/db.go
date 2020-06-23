@@ -39,7 +39,7 @@ func InitDB() {
 		fmt.Println(db)
 	}
 
-	defer db.Close()
+	//defer db.Close()
 	db.AutoMigrate(
 		&model.User{},
 	)
